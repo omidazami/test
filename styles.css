@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+  }
+.body{
+    background-color: antiquewhite;
+    padding: 30px;
+    margin:30px;
+    border: 2px solid;
+    float: left;
+    /* clear: both; */
+}
+h1 {
+    color:brown;
+    font-size: 10vw;
+}
+h2 {
+    color:blueviolet;
+    font-size: 8vw
+}
+h3 {
+    color:blue;
+    font-size: 6vw
+}
+h4 {
+    color:yellow;
+    font-size: 4vw
+}
+h5 {
+    color:green;
+    font-size: 2vw
+}
+h6 {
+    color: burlywood;
+    font-size: 1vw
+}
+p {
+    color: rgb(48, 43, 37);
+    font-size: 2vw
+}
+img {
+    color: grey;
+}
+pre {
+    color:rgb(48, 43, 37);
+}
+blockquote {
+    color: palevioletred;
+}
+address {
+    color:firebrick;
+}
+a {
+    color:darksalmon;
+}
+
+a:link {
+    color: rgb(227, 69, 109);
+}
+  
+a:visited {
+    color: rgb(19, 14, 105);
+}
+  
+a:hover {
+    color: rgb(245, 241, 11);
+}
+a:active {
+    color: rgb(46, 164, 62);
+}
+.center {
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+}
+table, caption, th, td, tr {
+    border: 1px solid black;
+    border-radius: 5px;
+    /* border-collapse: collapse; */
+    /* border-spacing: 10px; */
+    text-align: center;
+    font-size: x-large;
+    font-family: sans-serif;
+    width: 540px;
+    padding: 5px;
+}
+caption {
+    padding-top: 12px;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: sans-serif;
+    height: 48px;
+}
+.table1 td:nth-child(even), .table1 th:nth-child(even){
+    background-color: lightcyan;
+}
+.table1 caption{
+    background-color: lightcyan;
+}
+.table2 caption{
+    background-color:lightpink;
+}
+.table2 tr:nth-child(even){
+    background-color:lightpink;
+}
+.table2 tr:hover{
+    background-color: #D6EEEE;
+}
+
+/* tr:first-child{
+    background-color: lightcyan;
+} */
+#bg-pic{
+    background-image:url('pics/WD-Poster.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    /* background-attachment: fixed; */
+    height: 300px; 
+    border: 2px dotted black;
+}
+#menu3{
+    list-style-type:none;
+    background-color:aqua;
+    border: 1px solid black;
+    overflow:hidden;
+}
+#menu3 li{
+    float:left;
+    font-size: 32px;
+    padding: 5px; 
+}
+#menu3 li:hover{
+    background-color:yellow;
+    border: 1px solid red;
+}
+#omid-website{
+    border: 2px solid black;
+    background-color: aquamarine;
+    text-align: center;
+}
+.left-menu{
+    float: left;
+    width: 20%;
+    text-align: center;
+    border: 1px solid black;
+    background-color: cornflowerblue;
+}
+.right-menu{
+    float: left;
+    width: 20%;
+    text-align: center;
+    border: 1px solid black;
+    background-color: forestgreen;
+}
+.main-menu{
+    float: left;
+    width: 60%;
+    text-align: center;
+    border: 1px solid black;
+    background-color: gray;
+}
+.left-menu p, .main-menu p, .right-menu p {
+    color: white;
+}
+@media screen and (max-width:1200px){
+    .left-menu, .right-menu, .main-menu{
+        width: 100%;
+        text-align: left;
+        padding: 20px;
+    }
+}
+.simple-website-header{
+    background-color: #5E5E5E5E;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+    width: 100%;
+}
+.simple-website-header H2{
+    font-size: 3VW; 
+    padding: 0%;
+    margin: 0%;
+}
+.simple-website-container{
+    margin-top: 10px;
+    overflow: auto;
+    background-color: #5E5E5E5E;
+    border: 2px solid black;
+}
+.simple-website-left-menu{
+    padding-left: 20px;
+    margin-top: 20px;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.simple-website-left-menu a{
+    padding-top: 10px;
+    display: block;
+    font-size: 2vw;
+}
+.simple-website-main{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    width: 60%;
+    height: 100%;
+    float: left;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+.simple-website-right-sidebar{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.simple-website-footer{
+    background-color: #5E5E5E5E;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+    float: left;
+    font-size: 2vw;
+}
+@media screen and (max-width:1200px){
+    .simple-website-header, .simple-website-left-menu, .simple-website-main, .simple-website-right-sidebar, .simple-website-footer{
+        width: 100%;
+        text-align: left;
+        padding: 20px;
+    }
+    .simple-website-main{
+        border: none;
+    }
+}
